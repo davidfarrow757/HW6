@@ -2,20 +2,33 @@
 //  ContentView.swift
 //  Nevro
 //
-//  Created by David Farrow on 7/17/23.
+//  Created by David Farrow, Andrew Carter.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        TabView {
+            SearchView()
+                .tabItem {
+                    Image("ic-search")
+                }
+            FavoritesView()
+                .tabItem {
+                    Image("ic-favorites")
+                }
+            InboxView()
+                .tabItem {
+                    Image("ic-inbox")
+                }
+           MoreView()
+                .tabItem {
+                    Image("ic-more")
+                }
         }
-        .padding()
     }
 }
 

@@ -11,6 +11,11 @@
 		69ABB24F2A65EF010067548A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB24E2A65EF010067548A /* ContentView.swift */; };
 		69ABB2512A65EF020067548A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69ABB2502A65EF020067548A /* Assets.xcassets */; };
 		69ABB2542A65EF020067548A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69ABB2532A65EF020067548A /* Preview Assets.xcassets */; };
+		69ABB25D2A65F4330067548A /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB25C2A65F4330067548A /* SearchView.swift */; };
+		69ABB25F2A65F4460067548A /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB25E2A65F4460067548A /* FavoritesView.swift */; };
+		69ABB2632A65F4750067548A /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2622A65F4750067548A /* TripsView.swift */; };
+		69ABB2652A65F4870067548A /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2642A65F4870067548A /* InboxView.swift */; };
+		69ABB2672A65F49D0067548A /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2662A65F49D0067548A /* MoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		69ABB24E2A65EF010067548A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69ABB2502A65EF020067548A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69ABB2532A65EF020067548A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69ABB25C2A65F4330067548A /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		69ABB25E2A65F4460067548A /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		69ABB2622A65F4750067548A /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		69ABB2642A65F4870067548A /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		69ABB2662A65F49D0067548A /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +63,13 @@
 			children = (
 				69ABB24C2A65EF010067548A /* NevroApp.swift */,
 				69ABB24E2A65EF010067548A /* ContentView.swift */,
+				69ABB25C2A65F4330067548A /* SearchView.swift */,
+				69ABB25E2A65F4460067548A /* FavoritesView.swift */,
+				69ABB2622A65F4750067548A /* TripsView.swift */,
+				69ABB2642A65F4870067548A /* InboxView.swift */,
+				69ABB2662A65F49D0067548A /* MoreView.swift */,
 				69ABB2502A65EF020067548A /* Assets.xcassets */,
+				69ABB2682A65FAAB0067548A /* Fonts */,
 				69ABB2522A65EF020067548A /* Preview Content */,
 			);
 			path = Nevro;
@@ -65,6 +81,13 @@
 				69ABB2532A65EF020067548A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69ABB2682A65FAAB0067548A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69ABB2672A65F49D0067548A /* MoreView.swift in Sources */,
+				69ABB2632A65F4750067548A /* TripsView.swift in Sources */,
+				69ABB2652A65F4870067548A /* InboxView.swift in Sources */,
+				69ABB25F2A65F4460067548A /* FavoritesView.swift in Sources */,
 				69ABB24F2A65EF010067548A /* ContentView.swift in Sources */,
+				69ABB25D2A65F4330067548A /* SearchView.swift in Sources */,
 				69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
