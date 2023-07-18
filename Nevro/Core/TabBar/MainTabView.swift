@@ -9,26 +9,32 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-        TabView {
-            Text("Search")
+            TabView {
+            SearchView()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
+                    Text("Search")
                 }
-            Text("Favorites")
+            FavoritesView()
                 .tabItem {
                     Image(systemName: "heart")
+                    Text("Favorites")
                 }
-            Text("Trips")
+            TripsView()
                 .tabItem {
                     Image(systemName: "calendar")
+                    Text("Trips")
                 }
-            Text("Inbox")
+            InboxView()
                 .tabItem {
                     Image(systemName: "envelope.badge")
+                    Text("Inbox")
                 }
-            Text("More")
+            MoreView()
                 .tabItem {
                     Image(systemName: "ellipsis")
+                    Text("More")
                 }
         }
     }

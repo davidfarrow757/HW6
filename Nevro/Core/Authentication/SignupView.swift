@@ -38,7 +38,10 @@ struct SignupView: View {
                      Spacer()
                      
                      //Signup Button
-                     Image("signup-button")
+                     Button {
+                     } label: {
+                         Image("signup-button")
+                     }
                  }
              }
          }

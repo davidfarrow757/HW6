@@ -30,14 +30,20 @@ struct LoginView: View {
                     Image("temp-password")
                         .padding(.bottom, 10)
                     
-                    //Forgot Password
-                    Image("forgot-password")
+                    //Forgot Password Button
+                    Button {
+                    } label: {
+                        Image("forgot-password")
+                    }
                     
                     //Spacer
                     Spacer()
                     
-                    //Password
-                    Image("login-button-2")
+                    //Login Button
+                    Button {
+                    } label: {
+                        Image("login-button-2")
+                    }
                 }
             }
         }
