@@ -2,7 +2,7 @@
 //  NevroApp.swift
 //  Nevro
 //
-//  Created by David Farrow, Carter Anrew.
+//  Created by David Farrow and Carter Andrew.
 //
 
 import SwiftUI

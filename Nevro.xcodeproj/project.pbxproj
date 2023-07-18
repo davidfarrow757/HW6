@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		692233E82A6642F300A15B05 /* InputLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233E72A6642F300A15B05 /* InputLoginView.swift */; };
+		692233E82A6642F300A15B05 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233E72A6642F300A15B05 /* LoginView.swift */; };
 		692233EA2A66445800A15B05 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233E92A66445800A15B05 /* SignupView.swift */; };
 		69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791BF62A661EE400B81B38 /* MainTabView.swift */; };
-		69791C032A66263F00B81B38 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791C022A66263F00B81B38 /* LoginView.swift */; };
+		69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791C022A66263F00B81B38 /* SignupLoginView.swift */; };
 		69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB24C2A65EF010067548A /* NevroApp.swift */; };
 		69ABB24F2A65EF010067548A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB24E2A65EF010067548A /* ContentView.swift */; };
 		69ABB2512A65EF020067548A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69ABB2502A65EF020067548A /* Assets.xcassets */; };
@@ -23,10 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		692233E72A6642F300A15B05 /* InputLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputLoginView.swift; sourceTree = "<group>"; };
+		692233E72A6642F300A15B05 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		692233E92A66445800A15B05 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		69791BF62A661EE400B81B38 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
-		69791C022A66263F00B81B38 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		69791C022A66263F00B81B38 /* SignupLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoginView.swift; sourceTree = "<group>"; };
 		69ABB2492A65EF010067548A /* Nevro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nevro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69ABB24C2A65EF010067548A /* NevroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NevroApp.swift; sourceTree = "<group>"; };
 		69ABB24E2A65EF010067548A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +75,7 @@
 		69791BF82A661F0200B81B38 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				69ABB24C2A65EF010067548A /* NevroApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -82,8 +83,8 @@
 		69791BF92A66219D00B81B38 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				69791C022A66263F00B81B38 /* LoginView.swift */,
-				692233E72A6642F300A15B05 /* InputLoginView.swift */,
+				69791C022A66263F00B81B38 /* SignupLoginView.swift */,
+				692233E72A6642F300A15B05 /* LoginView.swift */,
 				692233E92A66445800A15B05 /* SignupView.swift */,
 			);
 			path = Authentication;
@@ -100,6 +101,7 @@
 		69791BFD2A66231C00B81B38 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				69ABB25C2A65F4330067548A /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -107,6 +109,7 @@
 		69791BFE2A66232500B81B38 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
+				69ABB25E2A65F4460067548A /* FavoritesView.swift */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -114,6 +117,7 @@
 		69791BFF2A66237500B81B38 /* Trips */ = {
 			isa = PBXGroup;
 			children = (
+				69ABB2622A65F4750067548A /* TripsView.swift */,
 			);
 			path = Trips;
 			sourceTree = "<group>";
@@ -121,6 +125,7 @@
 		69791C002A66239A00B81B38 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
+				69ABB2642A65F4870067548A /* InboxView.swift */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 		69791C012A6623DC00B81B38 /* More */ = {
 			isa = PBXGroup;
 			children = (
+				69ABB2662A65F49D0067548A /* MoreView.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -151,14 +157,8 @@
 		69ABB24B2A65EF010067548A /* Nevro */ = {
 			isa = PBXGroup;
 			children = (
-				69ABB24C2A65EF010067548A /* NevroApp.swift */,
 				69791BF82A661F0200B81B38 /* App */,
 				69791BF42A661E7A00B81B38 /* Core */,
-				69ABB25C2A65F4330067548A /* SearchView.swift */,
-				69ABB25E2A65F4460067548A /* FavoritesView.swift */,
-				69ABB2622A65F4750067548A /* TripsView.swift */,
-				69ABB2642A65F4870067548A /* InboxView.swift */,
-				69ABB2662A65F49D0067548A /* MoreView.swift */,
 				69791BFC2A6622EA00B81B38 /* Services */,
 				69ABB2502A65EF020067548A /* Assets.xcassets */,
 				69ABB2682A65FAAB0067548A /* Fonts */,
@@ -255,11 +255,11 @@
 				69ABB2672A65F49D0067548A /* MoreView.swift in Sources */,
 				69ABB2632A65F4750067548A /* TripsView.swift in Sources */,
 				69ABB2652A65F4870067548A /* InboxView.swift in Sources */,
-				69791C032A66263F00B81B38 /* LoginView.swift in Sources */,
+				69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */,
 				69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */,
 				69ABB25F2A65F4460067548A /* FavoritesView.swift in Sources */,
 				69ABB24F2A65EF010067548A /* ContentView.swift in Sources */,
-				692233E82A6642F300A15B05 /* InputLoginView.swift in Sources */,
+				692233E82A6642F300A15B05 /* LoginView.swift in Sources */,
 				69ABB25D2A65F4330067548A /* SearchView.swift in Sources */,
 				692233EA2A66445800A15B05 /* SignupView.swift in Sources */,
 				69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */,

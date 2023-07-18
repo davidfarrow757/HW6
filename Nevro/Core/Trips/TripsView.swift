@@ -1,20 +1,20 @@
 //
-//  MoreView.swift
+//  TripsView.swift
 //  Nevro
 //
-//  Created by David Farrow on 7/17/23.
+//  Created by David Farrow and Carter Andrew on 7/17/23.
 //
 
 import SwiftUI
 
-struct MoreView: View {
+struct TripsView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct MoreView_Previews: PreviewProvider {
+struct TripsView_Previews: PreviewProvider {
     static var previews: some View {
-        MoreView()
+        TripsView()
     }
 }

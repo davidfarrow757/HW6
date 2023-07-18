@@ -2,7 +2,7 @@
 //  SignupView.swift
 //  Nevro
 //
-//  Created by David Farrow on 7/17/23.
+//  Created by David Farrow and Carter Andrew.
 //
 
 import SwiftUI

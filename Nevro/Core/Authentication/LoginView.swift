@@ -2,47 +2,27 @@
 //  LoginView.swift
 //  Nevro
 //
-//  Created by David Farrow on 7/17/23.
+//  Created by David Farrow and Carter Andrew.
 //
 
 import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        NavigationStack {
+       NavigationStack {
             ZStack {
                 Color("Background")
                     .edgesIgnoringSafeArea(.all)
                 
                 //VStack for Logo
                 VStack{
-                    Image("welcome-to")
                     Image("header")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 337, height: 119)
-                    Image("key-to-new")
-                        .padding(.top)
-                    Image("car")
-                        .padding(.top, 50)
                     
                     //Spacer
                     Spacer()
-                    
-                    //Sign Up Link
-                    NavigationLink {
-                        SignupView()
-                    }   label: {
-                        Image("signup-button")
-                    }
-                    
-                    //Login Link
-                    NavigationLink {
-                        InputLoginView()
-                    }   label: {
-                        Image("login-button")
-                    }
-                    .padding(.vertical, 12)
                 }
             }
         }

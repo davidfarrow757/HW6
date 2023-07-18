@@ -1,20 +1,20 @@
 //
-//  TripsView.swift
+//  SearchView.swift
 //  Nevro
 //
-//  Created by David Farrow on 7/17/23.
+//  Created by David Farrow and Carter Andrew.
 //
 
 import SwiftUI
 
-struct TripsView: View {
+struct SearchView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct TripsView_Previews: PreviewProvider {
+struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        TripsView()
+        SearchView()
     }
 }

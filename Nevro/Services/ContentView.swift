@@ -2,14 +2,14 @@
 //  ContentView.swift
 //  Nevro
 //
-//  Created by David Farrow, Andrew Carter.
+//  Created by David Farrow and Andrew Carter.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        LoginView()
+        SignupLoginView()
     }
 }
 
