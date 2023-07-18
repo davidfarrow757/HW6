@@ -31,14 +31,14 @@ struct LoginView: View {
                     
                     //Sign Up Link
                     NavigationLink {
-                        Text("Sign Up")
+                        SignupView()
                     }   label: {
                         Image("signup-button")
                     }
                     
                     //Login Link
                     NavigationLink {
-                        Text("Log in")
+                        InputLoginView()
                     }   label: {
                         Image("login-button")
                     }
