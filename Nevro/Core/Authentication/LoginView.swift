@@ -37,7 +37,7 @@ struct LoginView: View {
                     Spacer()
                     
                     //Password
-                    Image("login-button")
+                    Image("login-button-2")
                 }
             }
         }
