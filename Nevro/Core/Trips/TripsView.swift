@@ -9,7 +9,10 @@ import SwiftUI
 
 struct TripsView: View {
     var body: some View {
-        Text("No trips yet")
+        VStack{
+            Image("trips-title")
+            Text("No trips yet")
+        }
     }
 }
 

@@ -11,7 +11,6 @@ struct MainTabView: View {
     var body: some View {
             TabView {
             SearchView()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")

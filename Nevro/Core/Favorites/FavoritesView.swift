@@ -9,7 +9,10 @@ import SwiftUI
 
 struct FavoritesView: View {
     var body: some View {
-        Text("No favorites yet")
+        VStack {
+            Image("favorites-title")
+            Text("No favorites yet")
+        }
     }
 }
 
