@@ -20,9 +20,24 @@ struct LoginView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 337, height: 119)
+                        .padding(.bottom, 100)
+                    
+                    //Phone Number
+                    Image("temp-phone")
+                        .padding(.bottom, 10)
+                    
+                    //Password
+                    Image("temp-password")
+                        .padding(.bottom, 10)
+                    
+                    //Forgot Password
+                    Image("forgot-password")
                     
                     //Spacer
                     Spacer()
+                    
+                    //Password
+                    Image("login-button")
                 }
             }
         }

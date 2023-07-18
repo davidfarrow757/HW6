@@ -20,9 +20,25 @@ struct SignupView: View {
                          .resizable()
                          .scaledToFill()
                          .frame(width: 337, height: 119)
+                         .padding(.bottom, 100)
                      
+                     //Full Name
+                     Image("temp-name")
+                         .padding(.bottom, 10)
+                     
+                     //Phone Number
+                     Image("temp-phone")
+                         .padding(.bottom, 10)
+                     
+                     //Password
+                     Image("temp-password")
+                         .padding(.bottom, 10)
+
                      //Spacer
                      Spacer()
+                     
+                     //Signup Button
+                     Image("signup-button")
                  }
              }
          }
