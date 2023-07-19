@@ -12,6 +12,7 @@
 		692233ED2A677F1100A15B05 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233EC2A677F1100A15B05 /* AccountView.swift */; };
 		692233F12A67826A00A15B05 /* BecomeHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F02A67826A00A15B05 /* BecomeHostView.swift */; };
 		692233F32A6782BB00A15B05 /* ContactSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F22A6782BB00A15B05 /* ContactSupportView.swift */; };
+		692233F52A68940F00A15B05 /* Project 6 Deliverables.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 692233F42A68940F00A15B05 /* Project 6 Deliverables.pdf */; };
 		69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791BF62A661EE400B81B38 /* MainTabView.swift */; };
 		69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791C022A66263F00B81B38 /* SignupLoginView.swift */; };
 		69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB24C2A65EF010067548A /* NevroApp.swift */; };
@@ -31,6 +32,7 @@
 		692233EC2A677F1100A15B05 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		692233F02A67826A00A15B05 /* BecomeHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeHostView.swift; sourceTree = "<group>"; };
 		692233F22A6782BB00A15B05 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
+		692233F42A68940F00A15B05 /* Project 6 Deliverables.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Project 6 Deliverables.pdf"; path = "../../../Downloads/Project 6 Deliverables.pdf"; sourceTree = "<group>"; };
 		69791BF62A661EE400B81B38 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		69791C022A66263F00B81B38 /* SignupLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoginView.swift; sourceTree = "<group>"; };
 		69ABB2492A65EF010067548A /* Nevro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nevro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,6 +192,7 @@
 		69ABB24B2A65EF010067548A /* Nevro */ = {
 			isa = PBXGroup;
 			children = (
+				692233F42A68940F00A15B05 /* Project 6 Deliverables.pdf */,
 				69791BF82A661F0200B81B38 /* App */,
 				69791BF42A661E7A00B81B38 /* Core */,
 				69791BFC2A6622EA00B81B38 /* Services */,
@@ -274,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69ABB2542A65EF020067548A /* Preview Assets.xcassets in Resources */,
+				692233F52A68940F00A15B05 /* Project 6 Deliverables.pdf in Resources */,
 				69ABB2512A65EF020067548A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
