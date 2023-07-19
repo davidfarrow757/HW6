@@ -44,6 +44,7 @@ struct LoginView: View {
                     } label: {
                         Image("login-button-2")
                     }
+                    
                 }
             }
         }

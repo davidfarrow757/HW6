@@ -9,23 +9,29 @@ import SwiftUI
 
 struct MoreView: View {
     var body: some View {
-        VStack {
-            Button {
-            } label: {
-                Image("account-button")
+        NavigationStack{
+            VStack {
+                NavigationLink  {
+                    AccountView()
+                } label: {
+                    Image("account-button")
+                }
+                NavigationLink {
+                    BecomeHostView()
+                } label: {
+                    Image("become-host-button")
+                }
+                NavigationLink {
+                    ContactSupportView()
+                } label: {
+                    Image("contact-support-button")
+                }
+                Button {
+                } label: {
+                    Image("logout-button")
+                }
             }
-            Button {
-            } label: {
-                Image("become-host-button")
-            }
-            Button {
-            } label: {
-                Image("contact-support-button")
-            }
-            Button {
-            } label: {
-                Image("logout-button")
-            }
+        
         }
     }
 }
