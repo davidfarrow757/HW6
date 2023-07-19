@@ -9,11 +9,19 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        VStack{
-            Image("search-title")
-            Text("...")
-                .padding(.vertical, 100)
-            Spacer()
+        ScrollView {
+                //title
+                Image("search-title")
+                //input placeholders
+                Image("temp-input-holder")
+                Image("temp-input-holder")
+                Image("temp-input-holder")
+                Image("temp-input-holder")
+                Image("temp-input-holder")
+                Image("temp-input-holder")
+                Image("temp-input-holder")
+                Image("temp-input-holder")
+                Image("temp-input-holder")
         }
     }
 }
