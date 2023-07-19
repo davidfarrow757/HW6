@@ -12,6 +12,8 @@ struct TripsView: View {
         VStack{
             Image("trips-title")
             Text("No trips yet")
+                .padding(.vertical, 100)
+            Spacer()
         }
     }
 }

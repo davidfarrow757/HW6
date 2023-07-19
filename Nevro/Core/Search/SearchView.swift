@@ -12,6 +12,8 @@ struct SearchView: View {
         VStack{
             Image("search-title")
             Text("...")
+                .padding(.vertical, 100)
+            Spacer()
         }
     }
 }

@@ -12,6 +12,8 @@ struct FavoritesView: View {
         VStack {
             Image("favorites-title")
             Text("No favorites yet")
+                .padding(.vertical, 100)
+            Spacer()
         }
     }
 }

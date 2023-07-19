@@ -12,6 +12,8 @@ struct InboxView: View {
         VStack{
             Image("inbox-title")
             Text("No messages yet")
+                .padding(.vertical, 100)
+            Spacer()
         }
     }
 }
