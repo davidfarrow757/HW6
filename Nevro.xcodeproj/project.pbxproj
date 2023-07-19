@@ -33,6 +33,7 @@
 		692233F02A67826A00A15B05 /* BecomeHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeHostView.swift; sourceTree = "<group>"; };
 		692233F22A6782BB00A15B05 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
 		692233F42A68940F00A15B05 /* Project 6 Deliverables.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Project 6 Deliverables.pdf"; path = "../../../Downloads/Project 6 Deliverables.pdf"; sourceTree = "<group>"; };
+		692233F62A68947C00A15B05 /* Project 6 Deliverables.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Project 6 Deliverables.pdf"; sourceTree = "<group>"; };
 		69791BF62A661EE400B81B38 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		69791C022A66263F00B81B38 /* SignupLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoginView.swift; sourceTree = "<group>"; };
 		69ABB2492A65EF010067548A /* Nevro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nevro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -176,6 +177,7 @@
 		69ABB2402A65EF010067548A = {
 			isa = PBXGroup;
 			children = (
+				692233F62A68947C00A15B05 /* Project 6 Deliverables.pdf */,
 				69ABB24B2A65EF010067548A /* Nevro */,
 				69ABB24A2A65EF010067548A /* Products */,
 			);
