@@ -12,7 +12,6 @@
 		692233ED2A677F1100A15B05 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233EC2A677F1100A15B05 /* AccountView.swift */; };
 		692233F12A67826A00A15B05 /* BecomeHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F02A67826A00A15B05 /* BecomeHostView.swift */; };
 		692233F32A6782BB00A15B05 /* ContactSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F22A6782BB00A15B05 /* ContactSupportView.swift */; };
-		692233F52A68940F00A15B05 /* Project 6 Deliverables.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 692233F42A68940F00A15B05 /* Project 6 Deliverables.pdf */; };
 		69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791BF62A661EE400B81B38 /* MainTabView.swift */; };
 		69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791C022A66263F00B81B38 /* SignupLoginView.swift */; };
 		69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB24C2A65EF010067548A /* NevroApp.swift */; };
@@ -24,6 +23,12 @@
 		69ABB2632A65F4750067548A /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2622A65F4750067548A /* TripsView.swift */; };
 		69ABB2652A65F4870067548A /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2642A65F4870067548A /* InboxView.swift */; };
 		69ABB2672A65F49D0067548A /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2662A65F49D0067548A /* MoreView.swift */; };
+		AD76A9752A69CACC00D92479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */; };
+		AD76A9782A69CC9500D92479 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A9772A69CC9500D92479 /* FirebaseAuth */; };
+		AD76A97A2A69CC9500D92479 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A9792A69CC9500D92479 /* FirebaseFirestore */; };
+		AD76A97C2A69CC9500D92479 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97B2A69CC9500D92479 /* FirebaseFirestoreSwift */; };
+		AD76A97E2A69CC9500D92479 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97D2A69CC9500D92479 /* FirebaseStorage */; };
+		AD76A9822A69D4C400D92479 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76A9812A69D4C400D92479 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +37,6 @@
 		692233EC2A677F1100A15B05 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		692233F02A67826A00A15B05 /* BecomeHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeHostView.swift; sourceTree = "<group>"; };
 		692233F22A6782BB00A15B05 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
-		692233F42A68940F00A15B05 /* Project 6 Deliverables.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = "Project 6 Deliverables.pdf"; path = "../../../Downloads/Project 6 Deliverables.pdf"; sourceTree = "<group>"; };
 		692233F62A68947C00A15B05 /* Project 6 Deliverables.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Project 6 Deliverables.pdf"; sourceTree = "<group>"; };
 		69791BF62A661EE400B81B38 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		69791C022A66263F00B81B38 /* SignupLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoginView.swift; sourceTree = "<group>"; };
@@ -46,6 +50,8 @@
 		69ABB2622A65F4750067548A /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		69ABB2642A65F4870067548A /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		69ABB2662A65F49D0067548A /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD76A9812A69D4C400D92479 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = "../../../../../../.Trash/HW6 1.51.08 PM/Nevro/AuthService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD76A9782A69CC9500D92479 /* FirebaseAuth in Frameworks */,
+				AD76A97E2A69CC9500D92479 /* FirebaseStorage in Frameworks */,
+				AD76A97A2A69CC9500D92479 /* FirebaseFirestore in Frameworks */,
+				AD76A97C2A69CC9500D92479 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,9 +129,8 @@
 		69791BF92A66219D00B81B38 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				69791C022A66263F00B81B38 /* SignupLoginView.swift */,
-				692233E72A6642F300A15B05 /* LoginView.swift */,
-				692233E92A66445800A15B05 /* SignupView.swift */,
+				AD76A9802A69D4A200D92479 /* Service */,
+				AD76A97F2A69D47C00D92479 /* Views */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -194,7 +203,7 @@
 		69ABB24B2A65EF010067548A /* Nevro */ = {
 			isa = PBXGroup;
 			children = (
-				692233F42A68940F00A15B05 /* Project 6 Deliverables.pdf */,
+				AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */,
 				69791BF82A661F0200B81B38 /* App */,
 				69791BF42A661E7A00B81B38 /* Core */,
 				69791BFC2A6622EA00B81B38 /* Services */,
@@ -220,6 +229,24 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		AD76A97F2A69D47C00D92479 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				69791C022A66263F00B81B38 /* SignupLoginView.swift */,
+				692233E72A6642F300A15B05 /* LoginView.swift */,
+				692233E92A66445800A15B05 /* SignupView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD76A9802A69D4A200D92479 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AD76A9812A69D4C400D92479 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,6 +263,12 @@
 			dependencies = (
 			);
 			name = Nevro;
+			packageProductDependencies = (
+				AD76A9772A69CC9500D92479 /* FirebaseAuth */,
+				AD76A9792A69CC9500D92479 /* FirebaseFirestore */,
+				AD76A97B2A69CC9500D92479 /* FirebaseFirestoreSwift */,
+				AD76A97D2A69CC9500D92479 /* FirebaseStorage */,
+			);
 			productName = Nevro;
 			productReference = 69ABB2492A65EF010067548A /* Nevro.app */;
 			productType = "com.apple.product-type.application";
@@ -264,6 +297,9 @@
 				Base,
 			);
 			mainGroup = 69ABB2402A65EF010067548A;
+			packageReferences = (
+				AD76A9762A69CC9500D92479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 69ABB24A2A65EF010067548A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -279,7 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69ABB2542A65EF020067548A /* Preview Assets.xcassets in Resources */,
-				692233F52A68940F00A15B05 /* Project 6 Deliverables.pdf in Resources */,
+				AD76A9752A69CACC00D92479 /* GoogleService-Info.plist in Resources */,
 				69ABB2512A65EF020067548A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +339,7 @@
 				692233F32A6782BB00A15B05 /* ContactSupportView.swift in Sources */,
 				692233E82A6642F300A15B05 /* LoginView.swift in Sources */,
 				69ABB25D2A65F4330067548A /* SearchView.swift in Sources */,
+				AD76A9822A69D4C400D92479 /* AuthService.swift in Sources */,
 				692233EA2A66445800A15B05 /* SignupView.swift in Sources */,
 				69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */,
 			);
@@ -503,6 +540,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AD76A9762A69CC9500D92479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AD76A9772A69CC9500D92479 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD76A9762A69CC9500D92479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		AD76A9792A69CC9500D92479 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD76A9762A69CC9500D92479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		AD76A97B2A69CC9500D92479 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD76A9762A69CC9500D92479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		AD76A97D2A69CC9500D92479 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AD76A9762A69CC9500D92479 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 69ABB2412A65EF010067548A /* Project object */;
 }
