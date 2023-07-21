@@ -23,6 +23,7 @@ struct LoginView: View {
                     //Phone Number
                     TextField("Email", text: $registrationViewModel.email, prompt: Text("Email").foregroundColor(.orange))
                         .padding(20)
+                        .autocapitalization(.none)
                         .font(.largeTitle)
                         .foregroundColor(.orange)
                         .multilineTextAlignment(.center)
@@ -30,6 +31,7 @@ struct LoginView: View {
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
                     SecureField("Password", text: $registrationViewModel.password, prompt: Text("Password").foregroundColor(.orange))
                         .padding(20)
+                        .autocapitalization(.none)
                         .font(.largeTitle)
                         .foregroundColor(.orange)
                         .multilineTextAlignment(.center)

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SignupView: View {
+    @EnvironmentObject var registrationViewModel: RegistrationViewModel
     var body: some View {
         NavigationStack {
              ZStack {
@@ -16,31 +17,57 @@ struct SignupView: View {
                  
                  //VStack for Logo
                  VStack{
-                     Image("header")
-                         .resizable()
-                         .scaledToFill()
-                         .frame(width: 337, height: 119)
-                         .padding(.bottom, 100)
-                     
-                     //Full Name
-                     Image("temp-name")
-                         .padding(.bottom, 10)
-                     
+                     Spacer()
                      //Phone Number
-                     Image("temp-phone")
-                         .padding(.bottom, 10)
+                     TextField("Email", text: $registrationViewModel.email, prompt: Text("Email").foregroundColor(.orange))
+                         .padding(20)
+                         .autocapitalization(.none)
+                         .autocorrectionDisabled()
+                         .font(.largeTitle)
+                         .foregroundColor(.orange)
+                         .multilineTextAlignment(.center)
+                         .disableAutocorrection(true)
+                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
+                     TextField("Username", text: $registrationViewModel.username, prompt: Text("Username").foregroundColor(.orange))
+                         .padding(20)
+                         .autocapitalization(.none)
+                         .autocorrectionDisabled()
+                         .font(.largeTitle)
+                         .foregroundColor(.orange)
+                         .multilineTextAlignment(.center)
+                         .disableAutocorrection(true)
+                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
+                     SecureField("Password", text: $registrationViewModel.password, prompt: Text("Password").foregroundColor(.orange))
+                         .padding(20)
+                         .font(.largeTitle)
+                         .foregroundColor(.orange)
+                         .multilineTextAlignment(.center)
+                         .disableAutocorrection(true)
+                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
+                     //Forgot Password Button
+                     Button {
+                     } label: {
+                         Text("Forgot Password?")
+                             .foregroundColor(.black)
+                             .frame(width: 200,height: 30)
+                             .background(.orange)
+                             .cornerRadius(100)
+                     }
                      
-                     //Password
-                     Image("temp-password")
-                         .padding(.bottom, 10)
-
                      //Spacer
                      Spacer()
                      
-                     //Signup Button
+                     //Login Button
                      Button {
+                         Task{try await registrationViewModel.createUser()}
                      } label: {
-                         Image("signup-button")
+                         Text("Sign up")
+                             .font(.largeTitle)
+                             .foregroundColor(.black)
+                             .frame(width: 360,height: 70)
+                             .background(.orange)
+                             .cornerRadius(100)
+                         
                      }
                  }
              }
