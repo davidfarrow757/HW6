@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var viewModel = ContentViewModel()
     var body: some View {
-        SignupLoginView()
+        Group{
+            if viewModel.userSession == nil{
+                SignupLoginView()
+            } else {
+                AccountView()
+            }
+        }
     }
 }
 

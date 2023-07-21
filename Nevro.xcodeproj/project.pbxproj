@@ -23,6 +23,8 @@
 		69ABB2632A65F4750067548A /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2622A65F4750067548A /* TripsView.swift */; };
 		69ABB2652A65F4870067548A /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2642A65F4870067548A /* InboxView.swift */; };
 		69ABB2672A65F49D0067548A /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB2662A65F49D0067548A /* MoreView.swift */; };
+		AD719D912A6AC94F002603BB /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD719D902A6AC94F002603BB /* ContentViewModel.swift */; };
+		AD719D942A6ACDBB002603BB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD719D932A6ACDBB002603BB /* RegistrationViewModel.swift */; };
 		AD76A9752A69CACC00D92479 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */; };
 		AD76A9782A69CC9500D92479 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A9772A69CC9500D92479 /* FirebaseAuth */; };
 		AD76A97A2A69CC9500D92479 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A9792A69CC9500D92479 /* FirebaseFirestore */; };
@@ -50,6 +52,8 @@
 		69ABB2622A65F4750067548A /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
 		69ABB2642A65F4870067548A /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		69ABB2662A65F49D0067548A /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		AD719D902A6AC94F002603BB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		AD719D932A6ACDBB002603BB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD76A9812A69D4C400D92479 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = "../../../../../../.Trash/HW6 1.51.08 PM/Nevro/AuthService.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +133,7 @@
 		69791BF92A66219D00B81B38 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				AD719D922A6ACD95002603BB /* ViewModels */,
 				AD76A9802A69D4A200D92479 /* Service */,
 				AD76A97F2A69D47C00D92479 /* Views */,
 			);
@@ -138,6 +143,7 @@
 		69791BFC2A6622EA00B81B38 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AD719D8F2A6AC924002603BB /* ViewModels */,
 				69ABB24E2A65EF010067548A /* ContentView.swift */,
 			);
 			path = Services;
@@ -227,6 +233,22 @@
 			children = (
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AD719D8F2A6AC924002603BB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD719D902A6AC94F002603BB /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD719D922A6ACD95002603BB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AD719D932A6ACDBB002603BB /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		AD76A97F2A69D47C00D92479 /* Views */ = {
@@ -328,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				692233ED2A677F1100A15B05 /* AccountView.swift in Sources */,
+				AD719D942A6ACDBB002603BB /* RegistrationViewModel.swift in Sources */,
 				692233F12A67826A00A15B05 /* BecomeHostView.swift in Sources */,
 				69ABB2672A65F49D0067548A /* MoreView.swift in Sources */,
 				69ABB2632A65F4750067548A /* TripsView.swift in Sources */,
@@ -335,6 +358,7 @@
 				69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */,
 				69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */,
 				69ABB25F2A65F4460067548A /* FavoritesView.swift in Sources */,
+				AD719D912A6AC94F002603BB /* ContentViewModel.swift in Sources */,
 				69ABB24F2A65EF010067548A /* ContentView.swift in Sources */,
 				692233F32A6782BB00A15B05 /* ContactSupportView.swift in Sources */,
 				692233E82A6642F300A15B05 /* LoginView.swift in Sources */,
