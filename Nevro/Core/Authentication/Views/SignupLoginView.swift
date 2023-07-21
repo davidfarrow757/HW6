@@ -51,6 +51,6 @@ struct SignupLoginView: View {
 
 struct SignupLoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        SignupLoginView()
     }
 }

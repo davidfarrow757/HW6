@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
     var body: some View {
        NavigationStack {
             ZStack {
@@ -16,20 +17,29 @@ struct LoginView: View {
                 
                 //VStack for Logo
                 VStack{
-                    Image("header")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 337, height: 119)
-                        .padding(.bottom, 100)
-                    
+                    Spacer()
                     //Phone Number
-                    Image("temp-phone")
-                        .padding(.bottom, 10)
-                    
-                    //Password
-                    Image("temp-password")
-                        .padding(.bottom, 10)
-                    
+                    TextField("Email", text: $email, prompt: Text("Email").foregroundColor(.orange))
+                        .padding(20)
+                        .font(.largeTitle)
+                        .foregroundColor(.orange)
+                        .multilineTextAlignment(.center)
+                        .disableAutocorrection(true)
+                        .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12))
+                    TextField("Username", text: $email, prompt: Text("Username").foregroundColor(.orange))
+                        .padding(20)
+                        .font(.largeTitle)
+                        .foregroundColor(.orange)
+                        .multilineTextAlignment(.center)
+                        .disableAutocorrection(true)
+                        .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12))
+                    SecureField("Password", text: $email, prompt: Text("Password").foregroundColor(.orange))
+                        .padding(20)
+                        .font(.largeTitle)
+                        .foregroundColor(.orange)
+                        .multilineTextAlignment(.center)
+                        .disableAutocorrection(true)
+                        .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12))
                     //Forgot Password Button
                     Button {
                     } label: {
