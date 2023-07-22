@@ -28,7 +28,7 @@ struct SignupView: View {
                          .multilineTextAlignment(.center)
                          .disableAutocorrection(true)
                          .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
-                     TextField("Full Name", text: $registrationViewModel.username, prompt: Text("Username").foregroundColor(.orange))
+                     TextField("Full Name", text: $registrationViewModel.username, prompt: Text("Full Name").foregroundColor(.orange))
                          .padding(20)
                          .autocapitalization(.none)
                          .autocorrectionDisabled()
@@ -56,7 +56,6 @@ struct SignupView: View {
                      
                      //Spacer
                      Spacer()
-                     
                      //Login Button
                      Button {
                          Task{try await registrationViewModel.createUser()}
