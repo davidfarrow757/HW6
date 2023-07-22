@@ -32,7 +32,7 @@
 		AD76A97A2A69CC9500D92479 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A9792A69CC9500D92479 /* FirebaseFirestore */; };
 		AD76A97C2A69CC9500D92479 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97B2A69CC9500D92479 /* FirebaseFirestoreSwift */; };
 		AD76A97E2A69CC9500D92479 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97D2A69CC9500D92479 /* FirebaseStorage */; };
-		AD76A9822A69D4C400D92479 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD76A9812A69D4C400D92479 /* AuthService.swift */; };
+		AD7DE4D62A6C39D000CE1C53 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,7 +59,7 @@
 		AD719D902A6AC94F002603BB /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		AD719D932A6ACDBB002603BB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		AD76A9812A69D4C400D92479 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = "../../../../../../.Trash/HW6 1.51.08 PM/Nevro/AuthService.swift"; sourceTree = "<group>"; };
+		AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,7 +278,7 @@
 		AD76A9802A69D4A200D92479 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				AD76A9812A69D4C400D92479 /* AuthService.swift */,
+				AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -369,6 +369,7 @@
 				AD3B02192A6C2EB30009A710 /* Vehicle.swift in Sources */,
 				69ABB2672A65F49D0067548A /* MoreView.swift in Sources */,
 				69ABB2632A65F4750067548A /* TripsView.swift in Sources */,
+				AD7DE4D62A6C39D000CE1C53 /* AuthService.swift in Sources */,
 				69ABB2652A65F4870067548A /* InboxView.swift in Sources */,
 				69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */,
 				69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */,
@@ -379,7 +380,6 @@
 				692233E82A6642F300A15B05 /* LoginView.swift in Sources */,
 				69ABB25D2A65F4330067548A /* SearchView.swift in Sources */,
 				AD3B02172A6C263C0009A710 /* User.swift in Sources */,
-				AD76A9822A69D4C400D92479 /* AuthService.swift in Sources */,
 				692233EA2A66445800A15B05 /* SignupView.swift in Sources */,
 				69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */,
 			);
