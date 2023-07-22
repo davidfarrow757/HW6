@@ -1,37 +1,84 @@
 //
-//  MoreView.swift
+//  AccountView.swift
 //  Nevro
 //
-//  Created by David Farrow and Carter Andrew.
+//  Created by David Farrow on 7/18/23.
 //
 
 import SwiftUI
 
 struct MoreView: View {
     var body: some View {
-        NavigationStack{
-            VStack {
-                NavigationLink  {
-                    AccountView()
-                } label: {
-                    Image("account-button")
+        ZStack {
+            Color("Background")
+            .edgesIgnoringSafeArea(.all)
+            VStack{
+                VStack(alignment: .center){
+                    Text("John Abignail").foregroundColor(.orange)
+                    Image("DefaultUser")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100,alignment: .center)
+                        .clipShape(Circle())
+                        .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3))
+                    Text("Change Profile Picture")
+                        .foregroundColor(.orange)
                 }
-                NavigationLink {
-                    BecomeHostView()
+                .padding(3)
+                .overlay(Rectangle().stroke(Color.orange, lineWidth: 3))
+                Spacer()
+                Button {
                 } label: {
-                    Image("become-host-button")
-                }
-                NavigationLink {
-                    ContactSupportView()
-                } label: {
-                    Image("contact-support-button")
+                    Text("Edit Account")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                        .frame(width: 360,height: 70)
+                        .background(.orange)
+                        .cornerRadius(100)
+                    
                 }
                 Button {
                 } label: {
-                    Image("logout-button")
+                    Text("Sign Out")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                        .frame(width: 360,height: 70)
+                        .background(.orange)
+                        .cornerRadius(100)
+                    
+                }
+                Button {
+                } label: {
+                    Text("Rent your vehicle")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                        .frame(width: 360,height: 70)
+                        .background(.orange)
+                        .cornerRadius(100)
+                    
+                }
+                Button {
+                } label: {
+                    Text("Contact Support")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                        .frame(width: 360,height: 70)
+                        .background(.orange)
+                        .cornerRadius(100)
+                    
+                }
+                Button {
+                    AuthService.shared.signOut()
+                } label: {
+                    Text("Log out")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                        .frame(width: 360,height: 70)
+                        .background(.orange)
+                        .cornerRadius(100)
+                    
                 }
             }
-        
         }
     }
 }

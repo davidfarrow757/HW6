@@ -62,7 +62,6 @@ struct LoginView: View {
                             .cornerRadius(100)
                         
                     }
-                    
                 }
             }
         }
