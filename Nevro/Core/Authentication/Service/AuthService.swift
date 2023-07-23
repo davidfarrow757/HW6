@@ -11,6 +11,7 @@ import FirebaseAuth
 import FirebaseFirestoreSwift
 class AuthService{
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     static let shared = AuthService()
     init(){
         self.userSession = Auth.auth().currentUser
@@ -34,7 +35,10 @@ class AuthService{
         }
     }
     func loadUserData() async throws{
-        
+        self.userSession = Auth.auth().currentUser
+        guard let currentUid = userSession?.uid else {return}
+        let snapshot = try await Firestore.firestore().collection("users").document(currentUid).getDocument()
+        self.currentUser = try? snapshot.data(as: User.self)
     }
     func signOut(){
         try? Auth.auth().signOut()
