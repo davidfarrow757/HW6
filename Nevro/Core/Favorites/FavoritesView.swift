@@ -9,11 +9,15 @@ import SwiftUI
 
 struct FavoritesView: View {
     var body: some View {
-        VStack {
-            Image("favorites-title")
-            Text("No favorites yet")
-                .padding(.vertical, 100)
+        ZStack {
+            Color("Background")
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Image("favorites-title")
+                Text("No favorites yet")
+                    .padding(.vertical, 100)
             Spacer()
+            }
         }
     }
 }

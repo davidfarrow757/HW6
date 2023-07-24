@@ -9,19 +9,12 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        ScrollView {
-                //title
-                Image("search-title")
-                //input placeholders
-                Image("temp-input-holder")
-                Image("temp-input-holder")
-                Image("temp-input-holder")
-                Image("temp-input-holder")
-                Image("temp-input-holder")
-                Image("temp-input-holder")
-                Image("temp-input-holder")
-                Image("temp-input-holder")
-                Image("temp-input-holder")
+        ZStack {
+            Color("Background")
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                Text("Search")
+            }
         }
     }
 }

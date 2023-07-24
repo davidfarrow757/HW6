@@ -9,11 +9,15 @@ import SwiftUI
 
 struct TripsView: View {
     var body: some View {
-        VStack{
-            Image("trips-title")
-            Text("No trips yet")
-                .padding(.vertical, 100)
-            Spacer()
+        ZStack {
+            Color("Background")
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+                Image("trips-title")
+                Text("No trips yet")
+                    .padding(.vertical, 100)
+                Spacer()
+            }
         }
     }
 }
