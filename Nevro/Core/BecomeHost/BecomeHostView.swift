@@ -9,7 +9,13 @@ import SwiftUI
 
 struct BecomeHostView: View {
     var body: some View {
-        Text("Become host..")
+        ZStack{
+            Color("Background")
+                .edgesIgnoringSafeArea(.all)
+            VStack{
+                Text("Become host..")
+            }
+        }
     }
 }
 

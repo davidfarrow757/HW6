@@ -5,6 +5,7 @@
 //  Created by Carter Andrew on 7/22/23.
 //
 
+/*
 import Foundation
 import Firebase
 import FirebaseFirestore
@@ -41,5 +42,7 @@ extension BasicVehicle{
         .init(id: NSUUID().uuidString, uid: NSUUID().uuidString, brand: "Ford", model: "F150", year: 1994, start: Date(), end: Date(), images: ["car"])
     ]
 }
+
+*/
 
 

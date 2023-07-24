@@ -75,7 +75,6 @@ struct AccountView: View {
                         .frame(width: 360,height: 70)
                         .background(.orange)
                         .cornerRadius(100)
-                    
                 }
             }
         }
