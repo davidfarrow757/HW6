@@ -33,6 +33,7 @@
 		AD76A97C2A69CC9500D92479 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97B2A69CC9500D92479 /* FirebaseFirestoreSwift */; };
 		AD76A97E2A69CC9500D92479 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97D2A69CC9500D92479 /* FirebaseStorage */; };
 		AD7DE4D62A6C39D000CE1C53 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */; };
+		ADEAE3082A7050E400693F0F /* BasicVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		AD719D932A6ACDBB002603BB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVehicleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 		AD3B02142A6C261F0009A710 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ADEAE3042A70501400693F0F /* VehicleViews */,
 				AD3B02162A6C263C0009A710 /* User.swift */,
 				AD3B02182A6C2EB30009A710 /* Vehicle.swift */,
 			);
@@ -281,6 +284,14 @@
 				AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		ADEAE3042A70501400693F0F /* VehicleViews */ = {
+			isa = PBXGroup;
+			children = (
+				ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */,
+			);
+			path = VehicleViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +376,7 @@
 			files = (
 				692233ED2A677F1100A15B05 /* AccountView.swift in Sources */,
 				AD719D942A6ACDBB002603BB /* RegistrationViewModel.swift in Sources */,
+				ADEAE3082A7050E400693F0F /* BasicVehicleView.swift in Sources */,
 				692233F12A67826A00A15B05 /* BecomeHostView.swift in Sources */,
 				AD3B02192A6C2EB30009A710 /* Vehicle.swift in Sources */,
 				69ABB2672A65F49D0067548A /* MoreView.swift in Sources */,
