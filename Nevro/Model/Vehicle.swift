@@ -5,14 +5,13 @@
 //  Created by Carter Andrew on 7/22/23.
 //
 
-/*
+
 import Foundation
 import Firebase
 import FirebaseFirestore
+import SwiftUI
 protocol VehicleHandler{
     func uploadData() async -> Bool
-    func renderCardView() -> View
-    func renderFullView() => View
 }
 struct BasicVehicle: Hashable, Identifiable, Codable{
     let id: String
@@ -27,6 +26,7 @@ struct BasicVehicle: Hashable, Identifiable, Codable{
 }
 class Vehicle: VehicleHandler{
     var vehicle: BasicVehicle
+    var cardView: (any View)?
     init(vehicle: BasicVehicle) {
         self.vehicle = vehicle
     }
@@ -42,7 +42,5 @@ extension BasicVehicle{
         .init(id: NSUUID().uuidString, uid: NSUUID().uuidString, brand: "Ford", model: "F150", year: 1994, start: Date(), end: Date(), images: ["car"])
     ]
 }
-
-*/
 
 
