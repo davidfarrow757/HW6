@@ -12,6 +12,7 @@
 		692233ED2A677F1100A15B05 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233EC2A677F1100A15B05 /* AccountView.swift */; };
 		692233F12A67826A00A15B05 /* BecomeHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F02A67826A00A15B05 /* BecomeHostView.swift */; };
 		692233F32A6782BB00A15B05 /* ContactSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F22A6782BB00A15B05 /* ContactSupportView.swift */; };
+		69237D3B2A71847200C02101 /* VehicleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69237D3A2A71847200C02101 /* VehicleCardView.swift */; };
 		69361AF52A708CBE006A7854 /* ImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69361AF42A708CBE006A7854 /* ImageSliderView.swift */; };
 		69361AF72A70A6D1006A7854 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69361AF62A70A6D1006A7854 /* HomeView.swift */; };
 		69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791BF62A661EE400B81B38 /* MainTabView.swift */; };
@@ -46,6 +47,7 @@
 		692233F02A67826A00A15B05 /* BecomeHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeHostView.swift; sourceTree = "<group>"; };
 		692233F22A6782BB00A15B05 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
 		692233F62A68947C00A15B05 /* Project 6 Deliverables.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Project 6 Deliverables.pdf"; sourceTree = "<group>"; };
+		69237D3A2A71847200C02101 /* VehicleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VehicleCardView.swift; path = ../Account/VehicleCardView.swift; sourceTree = "<group>"; };
 		69361AF42A708CBE006A7854 /* ImageSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderView.swift; sourceTree = "<group>"; };
 		69361AF62A70A6D1006A7854 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		69791BF62A661EE400B81B38 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				69361AF42A708CBE006A7854 /* ImageSliderView.swift */,
+				69237D3A2A71847200C02101 /* VehicleCardView.swift */,
 				69361AF62A70A6D1006A7854 /* HomeView.swift */,
 			);
 			path = Home;
@@ -412,6 +415,7 @@
 				AD91B5302A7066E200185A20 /* GreenVehicleView.swift in Sources */,
 				69ABB25D2A65F4330067548A /* SearchView.swift in Sources */,
 				AD3B02172A6C263C0009A710 /* User.swift in Sources */,
+				69237D3B2A71847200C02101 /* VehicleCardView.swift in Sources */,
 				692233EA2A66445800A15B05 /* SignupView.swift in Sources */,
 				69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */,
 			);
