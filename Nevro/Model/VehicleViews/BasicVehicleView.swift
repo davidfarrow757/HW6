@@ -15,7 +15,7 @@ struct BasicVehicleView: View {
                 Text(verbatim:"\(post.vehicle.brand) \(post.vehicle.model) | \(post.vehicle.year)")
                     .font(.title)
                     .foregroundColor(Color("Background"))
-                Text("\(post.user.name)")
+                Text("\(post.vehicle.id)")
                     .font(.title2)
                     .foregroundColor(Color("Background"))
                 Text("\(String(format: "%.2f", post.vehicle.monthPrice))$/month")

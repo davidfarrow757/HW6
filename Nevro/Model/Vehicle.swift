@@ -12,12 +12,12 @@ import FirebaseFirestore
 import SwiftUI
 protocol VehicleHandler: Identifiable{
     var id: String{get}
-    func uploadData() async -> Bool
+    func uploadData() async -> Void
     func renderCardView() -> AnyView
 }
 struct VehicleAttributes: Hashable, Identifiable, Codable{
     let id: String
-    let uid: String
+    let uid: String?
     var brand: String
     var model: String
     var year: Int
@@ -37,16 +37,14 @@ struct GreenVehicleAttributes: Hashable, Identifiable, Codable{
 class Vehicle: VehicleHandler{
     var vehicle: VehicleAttributes
     var id: String {self.vehicle.id}
-    var user: User
     init(vehicle: VehicleAttributes) {
         self.vehicle = vehicle
-        self.user = User(id: self.vehicle.uid, name: "Carter Andrew", email: "cardi@gmail.com", profileImageURL: "car")
     }
     func renderCardView() -> AnyView {
         return AnyView(BasicVehicleView(post: self))
     }
-    func uploadData() async -> Bool {
-        return true
+    func uploadData() async -> Void {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
     }
 }
 class GreenVehicle: VehicleHandler{
@@ -62,8 +60,8 @@ class GreenVehicle: VehicleHandler{
     func renderCardView() -> AnyView {
         return AnyView(GreenVehicleView(post: self))
     }
-    func uploadData() async -> Bool {
-        return true
+    func uploadData() async -> Void {
+        
     }
 }
 
