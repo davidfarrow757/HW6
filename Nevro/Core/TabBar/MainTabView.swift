@@ -29,13 +29,14 @@ struct MainTabView: View {
                     Text("Trips")
                 }   .toolbarBackground(.visible, for: .tabBar)
                     .toolbarBackground(Color("TabColor"), for: .tabBar)
-              
+           /*
             InboxView()
                 .tabItem {
                     Image(systemName: "envelope.badge")
                     Text("Inbox")
                 }   .toolbarBackground(.visible, for: .tabBar)
                     .toolbarBackground(Color("TabColor"), for: .tabBar)
+            */
             MoreView()
                 .tabItem {
                     Image(systemName: "ellipsis")
