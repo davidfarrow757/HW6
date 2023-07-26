@@ -48,20 +48,18 @@ class Vehicle: VehicleHandler{
     }
 }
 class GreenVehicle: VehicleHandler{
-    var vehicle: VehicleAttributes
-    var id: String{self.vehicle.id}
+    var vehicle: Vehicle
+    var id: String {self.vehicle.id}
     var greenAttributes: GreenVehicleAttributes
-    var user: User
-    init(vehicle: VehicleAttributes, greenAttributes: GreenVehicleAttributes, user: User) {
+    init(vehicle: Vehicle, greenAttributes: GreenVehicleAttributes, user: User) {
         self.vehicle = vehicle
         self.greenAttributes = greenAttributes
-        self.user = user
     }
     func renderCardView() -> AnyView {
         return AnyView(GreenVehicleView(post: self))
     }
     func uploadData() async -> Void {
-        
+        await vehicle.uploadData()
     }
 }
 
@@ -76,7 +74,7 @@ extension Vehicle{
 }
 extension GreenVehicle{
     static var MOCK_POSTS: [GreenVehicle] = [
-        GreenVehicle(vehicle: VehicleAttributes.init(id: NSUUID().uuidString, uid: NSUUID().uuidString, brand: "Kia", model: "Sol", year: 1992, start: Date(), end: Date(), monthPrice: 2000, numSeats: 5, drivechain: "rwd", images: ["car"]), greenAttributes: GreenVehicleAttributes.init(id: NSUUID().uuidString, mpg: 45, vehicleType: "Hybrid"), user: User(id: NSUUID().uuidString, name: "John Visa", email: "john@gmail.com"))
+        GreenVehicle(vehicle: Vehicle(vehicle: VehicleAttributes.init(id: NSUUID().uuidString, uid: NSUUID().uuidString, brand: "Kia", model: "Sol", year: 1992, start: Date(), end: Date(), monthPrice: 2000, numSeats: 5, drivechain: "rwd", images: ["car"])), greenAttributes: GreenVehicleAttributes.init(id: NSUUID().uuidString, mpg: 45, vehicleType: "Hybrid"), user: User(id: NSUUID().uuidString, name: "John Visa", email: "john@gmail.com"))
     ]
 }
 
