@@ -28,7 +28,6 @@ struct HomeView: View {
                         .frame(width: 300,height: 30)
                         .background(.orange)
                         .cornerRadius(100)
-                        .font(.title2)
                 }
   
                 HStack {
@@ -43,8 +42,15 @@ struct HomeView: View {
             
                 } .padding()
                 
-                VehicleCardView()
                 
+                ScrollView (.horizontal, showsIndicators: false){
+                    HStack{
+                        VehicleCardView()
+                        VehicleCardView()
+                        VehicleCardView()
+                        VehicleCardView()
+                    }
+                }
 
                 Spacer()
             }

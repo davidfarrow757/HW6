@@ -17,8 +17,8 @@ struct ImageSliderView: View {
             ZStack(alignment: .trailing){
                 Image(slides[currentIndex])
                     .resizable()
+                    .scaledToFill()
                     .frame(width: .infinity, height: 180)
-                    .scaledToFit()
                     .cornerRadius(15)
             }
             HStack{
