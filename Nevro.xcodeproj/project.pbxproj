@@ -36,6 +36,7 @@
 		AD76A97C2A69CC9500D92479 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97B2A69CC9500D92479 /* FirebaseFirestoreSwift */; };
 		AD76A97E2A69CC9500D92479 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97D2A69CC9500D92479 /* FirebaseStorage */; };
 		AD7DE4D62A6C39D000CE1C53 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */; };
+		AD85A8D72A7180F00035691D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD85A8D62A7180F00035691D /* PostView.swift */; };
 		AD91B5302A7066E200185A20 /* GreenVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91B52F2A7066E200185A20 /* GreenVehicleView.swift */; };
 		ADEAE3082A7050E400693F0F /* BasicVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */; };
 /* End PBXBuildFile section */
@@ -68,6 +69,7 @@
 		AD719D932A6ACDBB002603BB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AD85A8D62A7180F00035691D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		AD91B52F2A7066E200185A20 /* GreenVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenVehicleView.swift; sourceTree = "<group>"; };
 		ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVehicleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +126,7 @@
 		69791BF42A661E7A00B81B38 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				AD85A8D52A7180BE0035691D /* Post */,
 				69407C142A70ABC100FCA739 /* Home */,
 				692233EF2A67824B00A15B05 /* ContactSupport */,
 				692233EE2A67823B00A15B05 /* BecomeHost */,
@@ -305,6 +308,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		AD85A8D52A7180BE0035691D /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				AD85A8D62A7180F00035691D /* PostView.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		ADEAE3042A70501400693F0F /* VehicleViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +415,7 @@
 				69ABB2672A65F49D0067548A /* MoreView.swift in Sources */,
 				69ABB2632A65F4750067548A /* TripsView.swift in Sources */,
 				AD7DE4D62A6C39D000CE1C53 /* AuthService.swift in Sources */,
+				AD85A8D72A7180F00035691D /* PostView.swift in Sources */,
 				69ABB2652A65F4870067548A /* InboxView.swift in Sources */,
 				69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */,
 				69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */,

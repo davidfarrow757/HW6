@@ -23,6 +23,7 @@ struct GreenVehicleView: View {
                     .multilineTextAlignment(.center)
                 Text("\(post.vehicle.numSeats) seats | \(post.greenAttributes.mpg) mpg")
                     .font(.title2)
+                Text("Type: \(post.greenAttributes.vehicleType)").font(.title2)
             }
             .frame(maxWidth: .infinity)
             Image("\(post.vehicle.images[0])")
