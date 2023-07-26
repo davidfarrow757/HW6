@@ -17,7 +17,7 @@ struct SignupLoginView: View {
                 //VStack for Logo
                 VStack{
                     Image("welcome-to")
-                    Image("header")
+                    Image("Header")
                         .resizable()
                         .scaledToFill()
                         .frame(width: 337, height: 119)

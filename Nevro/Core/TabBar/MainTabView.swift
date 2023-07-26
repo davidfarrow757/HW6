@@ -10,18 +10,19 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
             TabView {
+            HomeView()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                    }   .toolbarBackground(.visible, for: .tabBar)
+                        .toolbarBackground(Color("TabColor"), for: .tabBar)
             SearchView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
                 }   .toolbarBackground(.visible, for: .tabBar)
                     .toolbarBackground(Color("TabColor"), for: .tabBar)
-            FavoritesView()
-                .tabItem {
-                    Image(systemName: "heart")
-                    Text("Favorites")
-                }   .toolbarBackground(.visible, for: .tabBar)
-                    .toolbarBackground(Color("TabColor"), for: .tabBar)
+            
             TripsView()
                 .tabItem {
                     Image(systemName: "calendar")
@@ -41,7 +42,7 @@ struct MainTabView: View {
                     Text("More")
                 }   .toolbarBackground(.visible, for: .tabBar)
                     .toolbarBackground(Color("TabColor"), for: .tabBar)
-        }
+            }
     }
 }
 

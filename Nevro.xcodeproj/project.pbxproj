@@ -12,6 +12,8 @@
 		692233ED2A677F1100A15B05 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233EC2A677F1100A15B05 /* AccountView.swift */; };
 		692233F12A67826A00A15B05 /* BecomeHostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F02A67826A00A15B05 /* BecomeHostView.swift */; };
 		692233F32A6782BB00A15B05 /* ContactSupportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233F22A6782BB00A15B05 /* ContactSupportView.swift */; };
+		69361AF52A708CBE006A7854 /* ImageSliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69361AF42A708CBE006A7854 /* ImageSliderView.swift */; };
+		69361AF72A70A6D1006A7854 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69361AF62A70A6D1006A7854 /* HomeView.swift */; };
 		69791BF72A661EE400B81B38 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791BF62A661EE400B81B38 /* MainTabView.swift */; };
 		69791C032A66263F00B81B38 /* SignupLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69791C022A66263F00B81B38 /* SignupLoginView.swift */; };
 		69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69ABB24C2A65EF010067548A /* NevroApp.swift */; };
@@ -44,6 +46,8 @@
 		692233F02A67826A00A15B05 /* BecomeHostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeHostView.swift; sourceTree = "<group>"; };
 		692233F22A6782BB00A15B05 /* ContactSupportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSupportView.swift; sourceTree = "<group>"; };
 		692233F62A68947C00A15B05 /* Project 6 Deliverables.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Project 6 Deliverables.pdf"; sourceTree = "<group>"; };
+		69361AF42A708CBE006A7854 /* ImageSliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSliderView.swift; sourceTree = "<group>"; };
+		69361AF62A70A6D1006A7854 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		69791BF62A661EE400B81B38 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		69791C022A66263F00B81B38 /* SignupLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLoginView.swift; sourceTree = "<group>"; };
 		69ABB2492A65EF010067548A /* Nevro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nevro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,9 +109,19 @@
 			path = ContactSupport;
 			sourceTree = "<group>";
 		};
+		69407C142A70ABC100FCA739 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69361AF42A708CBE006A7854 /* ImageSliderView.swift */,
+				69361AF62A70A6D1006A7854 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		69791BF42A661E7A00B81B38 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				69407C142A70ABC100FCA739 /* Home */,
 				692233EF2A67824B00A15B05 /* ContactSupport */,
 				692233EE2A67823B00A15B05 /* BecomeHost */,
 				692233EB2A677EEE00A15B05 /* Account */,
@@ -382,6 +396,8 @@
 				ADEAE3082A7050E400693F0F /* BasicVehicleView.swift in Sources */,
 				692233F12A67826A00A15B05 /* BecomeHostView.swift in Sources */,
 				AD3B02192A6C2EB30009A710 /* Vehicle.swift in Sources */,
+				69361AF72A70A6D1006A7854 /* HomeView.swift in Sources */,
+				69361AF52A708CBE006A7854 /* ImageSliderView.swift in Sources */,
 				69ABB2672A65F49D0067548A /* MoreView.swift in Sources */,
 				69ABB2632A65F4750067548A /* TripsView.swift in Sources */,
 				AD7DE4D62A6C39D000CE1C53 /* AuthService.swift in Sources */,
