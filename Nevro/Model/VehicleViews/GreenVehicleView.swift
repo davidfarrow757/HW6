@@ -1,5 +1,5 @@
 //
-//  BasicVehicleView.swift
+//  GreenVehicleView.swift
 //  Nevro
 //
 //  Created by Carter Andrew on 7/25/23.
@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-struct BasicVehicleView: View {
-    let post: Vehicle
+struct GreenVehicleView: View {
+    let post: GreenVehicle
     var body: some View {
         HStack{
             VStack{
@@ -27,12 +27,12 @@ struct BasicVehicleView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity)
         }
-        .background(.orange)
+        .background(.green)
     }
 }
 
-struct BasicVehicleView_Previews: PreviewProvider {
+struct GreenVehicleView_Previews: PreviewProvider {
     static var previews: some View {
-        BasicVehicleView(post:Vehicle.MOCK_POSTS[0])
+        GreenVehicleView(post: GreenVehicle.MOCK_POSTS[0])
     }
 }

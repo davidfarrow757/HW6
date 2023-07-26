@@ -9,11 +9,12 @@ import SwiftUI
 
 struct SearchView: View {
     var body: some View {
-        ZStack {
-            Color("Background")
-                .edgesIgnoringSafeArea(.all)
-            VStack {
-                Text("Search")
+        ScrollView{
+            LazyVStack(spacing: 32){
+                ForEach(Vehicle.DIVERSE_MOCK_POSTS, id: \.id){
+                    post in
+                    post.renderCardView()
+                }
             }
         }
     }

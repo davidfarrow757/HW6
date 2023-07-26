@@ -33,6 +33,7 @@
 		AD76A97C2A69CC9500D92479 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97B2A69CC9500D92479 /* FirebaseFirestoreSwift */; };
 		AD76A97E2A69CC9500D92479 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = AD76A97D2A69CC9500D92479 /* FirebaseStorage */; };
 		AD7DE4D62A6C39D000CE1C53 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */; };
+		AD91B5302A7066E200185A20 /* GreenVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91B52F2A7066E200185A20 /* GreenVehicleView.swift */; };
 		ADEAE3082A7050E400693F0F /* BasicVehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		AD719D932A6ACDBB002603BB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		AD76A9742A69CACC00D92479 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AD7DE4D52A6C39D000CE1C53 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		AD91B52F2A7066E200185A20 /* GreenVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenVehicleView.swift; sourceTree = "<group>"; };
 		ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicVehicleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -290,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				ADEAE3072A7050E400693F0F /* BasicVehicleView.swift */,
+				AD91B52F2A7066E200185A20 /* GreenVehicleView.swift */,
 			);
 			path = VehicleViews;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				69ABB24F2A65EF010067548A /* ContentView.swift in Sources */,
 				692233F32A6782BB00A15B05 /* ContactSupportView.swift in Sources */,
 				692233E82A6642F300A15B05 /* LoginView.swift in Sources */,
+				AD91B5302A7066E200185A20 /* GreenVehicleView.swift in Sources */,
 				69ABB25D2A65F4330067548A /* SearchView.swift in Sources */,
 				AD3B02172A6C263C0009A710 /* User.swift in Sources */,
 				692233EA2A66445800A15B05 /* SignupView.swift in Sources */,
