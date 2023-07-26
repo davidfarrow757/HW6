@@ -26,7 +26,7 @@ struct MoreView: View {
                 }
                 .padding(3)
                 .overlay(Rectangle().stroke(Color.orange, lineWidth: 3))
-                Spacer()
+              
                 Button {
                 } label: {
                     Text("Edit Account")
@@ -35,18 +35,9 @@ struct MoreView: View {
                         .frame(width: 360,height: 70)
                         .background(.orange)
                         .cornerRadius(100)
-                    
+                        .padding(.top,50)
                 }
-                Button {
-                } label: {
-                    Text("Sign Out")
-                        .font(.largeTitle)
-                        .foregroundColor(.black)
-                        .frame(width: 360,height: 70)
-                        .background(.orange)
-                        .cornerRadius(100)
-                    
-                }
+    
                 Button {
                 } label: {
                     Text("Rent your vehicle")
@@ -55,7 +46,6 @@ struct MoreView: View {
                         .frame(width: 360,height: 70)
                         .background(.orange)
                         .cornerRadius(100)
-                    
                 }
                 Button {
                 } label: {
@@ -65,7 +55,6 @@ struct MoreView: View {
                         .frame(width: 360,height: 70)
                         .background(.orange)
                         .cornerRadius(100)
-                    
                 }
                 Button {
                     AuthService.shared.signOut()

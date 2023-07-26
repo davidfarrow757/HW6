@@ -15,7 +15,7 @@ struct HomeView: View {
             VStack{
                 Image("Header")
                     .frame(width: 190, height: 35)
-                    .padding(.top,35)
+                   .padding(.top,35)
                  Divider()
         
                 ImageSliderView()
@@ -30,19 +30,18 @@ struct HomeView: View {
                         .cornerRadius(100)
                         .font(.title2)
                 }
-                
-                
-                
+  
                 HStack {
                     Text("Recently Added")
                         .font(.title3)
                         .fontWeight(.medium)
                         .foregroundColor(Color("Gray1"))
+                     
                     Spacer()
                     Image(systemName: "car")
                         .foregroundColor(Color("Gray1"))
+            
                 } .padding()
-                
                 
                 VehicleCardView()
                 

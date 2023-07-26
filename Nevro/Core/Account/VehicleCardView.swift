@@ -13,6 +13,7 @@ struct VehicleCardView: View {
     var body: some View {
         ZStack {
             Color("Gray1")
+            
             ZStack(alignment: .bottomTrailing){
                 VStack(alignment: .leading){
                     Image("fn1")
@@ -22,12 +23,12 @@ struct VehicleCardView: View {
                     
                     Text("Ford Mustang ")
                         .font(.headline)
-                        .padding(.vertical,0.5)
+                        .padding(.vertical,1)
                     
                     Text("2020")
                         .foregroundColor(Color("AccentColor"))
                         .font(.caption)
-                        .padding(.vertical, 0.5)
+                        .padding(.vertical, 1)
                     
                     Text("$200 per day")
                         .bold()
