@@ -42,7 +42,6 @@ struct HomeView: View {
             
                 } .padding()
                 
-                
                 ScrollView (.horizontal, showsIndicators: false){
                     HStack{
                         VehicleCardView()

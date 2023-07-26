@@ -18,6 +18,7 @@ struct VehicleCardView: View {
                 VStack(alignment: .leading){
                     Image("fn1")
                         .resizable()
+                        .scaledToFill()
                         .frame(width: 175, height: 160)
                         .cornerRadius(12)
                     

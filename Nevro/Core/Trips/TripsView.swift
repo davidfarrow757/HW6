@@ -14,16 +14,30 @@ struct TripsView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack{
                 Image("trips-title")
-                Text("No trips yet")
-                    .padding(.vertical, 100)
-                Spacer()
+                
+                //Scroller Begins
+                ScrollView{
+                    TripsCardView()
+                    TripsCardView()
+                    TripsCardView()
+                    TripsCardView()
+                    TripsCardView()
+                    TripsCardView()
+                    TripsCardView()
+                    TripsCardView()
+                    TripsCardView()
+                }
             }
         }
     }
 }
+
 
 struct TripsView_Previews: PreviewProvider {
     static var previews: some View {
         TripsView()
     }
 }
+
+
+

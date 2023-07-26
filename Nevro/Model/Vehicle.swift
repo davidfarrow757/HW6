@@ -47,6 +47,7 @@ class Vehicle: VehicleHandler{
         guard let uid = Auth.auth().currentUser?.uid else {return}
     }
 }
+
 class GreenVehicle: VehicleHandler{
     var vehicle: Vehicle
     var id: String {self.vehicle.id}
