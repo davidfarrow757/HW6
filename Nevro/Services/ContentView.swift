@@ -16,7 +16,7 @@ struct ContentView: View {
                 SignupLoginView()
                     .environmentObject(registrationViewModel)
             } else {
-                MoreView()
+                MainTabView()
             }
         }
     }
