@@ -18,7 +18,10 @@ struct GreenVehicleView: View {
                     .font(.title2)
                 Text("\(String(format: "%.2f", post.vehicle.monthPrice))$/month")
                     .font(.title2)
-                Text("\(post.vehicle.numSeats) seats | \(post.vehicle.drivechain)")
+                Text("From:\(post.vehicle.start.formatted(date: .abbreviated, time: .omitted)) To: \(post.vehicle.end.formatted(date: .abbreviated, time: .omitted))")
+                    .font(.title2)
+                    .multilineTextAlignment(.center)
+                Text("\(post.vehicle.numSeats) seats | \(post.greenAttributes.mpg) mpg")
                     .font(.title2)
             }
             .frame(maxWidth: .infinity)
