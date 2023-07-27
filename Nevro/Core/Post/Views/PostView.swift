@@ -28,7 +28,12 @@ struct PostView: View {
     @State var start: Date = Date()
     @State var end: Date = Date()
     @State var condition: String = ""
-    @State var mpg: String = ""
+    @State var numSeats: Int = 0
+    @State var mpg: Int = 0
+    @State var cartype: String = ""
+    @State var clearance: Float = 0
+    @State var hp: Int = 0
+    @State var sqFt: Int = 0
     var body: some View {
         ScrollView{
             LazyVStack{
@@ -95,7 +100,7 @@ struct PostView: View {
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
                 }
                 Group{
-                    TextField("Miles per gallon", text: $condition, prompt: Text("Miles per Gallon").foregroundColor(.green))
+                    TextField("Miles per gallon", value: $mpg, formatter: intFormatter, prompt: Text("Miles per Gallon").foregroundColor(.green))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
@@ -103,7 +108,7 @@ struct PostView: View {
                         .multilineTextAlignment(.center)
                         .disableAutocorrection(true)
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.green, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
-                    TextField("Car type (Hybrid)", text: $mpg, prompt: Text("Car type, ex: Hybrid").foregroundColor(.green))
+                    TextField("Car type", text: $cartype, prompt: Text("Car type, ex(Hybrid)").foregroundColor(.green))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
@@ -113,7 +118,7 @@ struct PostView: View {
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.green, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
                 }
                 Group{
-                    TextField("Miles per gallon", text: $condition, prompt: Text("Miles per Gallon").foregroundColor(.blue))
+                    TextField("Clearance", value: $clearance, formatter: intFormatter, prompt: Text("Clearnace").foregroundColor(.blue))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
@@ -121,7 +126,7 @@ struct PostView: View {
                         .multilineTextAlignment(.center)
                         .disableAutocorrection(true)
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.blue, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
-                    TextField("Miles per gallon", text: $condition, prompt: Text("Miles per Gallon").foregroundColor(.blue))
+                    TextField("HorsePower", value: $hp, formatter: intFormatter, prompt: Text("HorsePower").foregroundColor(.blue))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
@@ -129,7 +134,7 @@ struct PostView: View {
                         .multilineTextAlignment(.center)
                         .disableAutocorrection(true)
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.blue, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
-                    TextField("Miles per gallon", text: $condition, prompt: Text("Miles per Gallon").foregroundColor(.blue))
+                    TextField("Clearance", value: $clearance, formatter: intFormatter, prompt: Text("").foregroundColor(.blue))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
