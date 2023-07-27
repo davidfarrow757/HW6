@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct VehicleCardView: View {
-    // @EnvironmentObject var cartManager: CartManager
-    //var product: Product
     var body: some View {
         ZStack {
             Color("Gray1")
@@ -35,7 +33,6 @@ struct VehicleCardView: View {
                         .bold()
                 }
                 Button{
-                    //cartManager.addToCart(product: product)
                 } label: {
                     Image (systemName: "plus.circle.fill")
                         .resizable()

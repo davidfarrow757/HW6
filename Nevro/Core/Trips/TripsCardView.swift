@@ -15,11 +15,12 @@ struct TripsCardView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 50, height: 50)
+                    .cornerRadius(15)
                     .clipShape(Rectangle())
                     .padding(.trailing, 10)
                 VStack(spacing: 5) {
                     HStack {
-                        Text("Ford Mustang")
+                        Text("Chevrolet Camaro")
                             .font(.callout)
                             .lineLimit(1)
                         Spacer()
