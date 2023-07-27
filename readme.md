@@ -1,0 +1,20 @@
+# OOAD Final project: Nevro
+## By Carter Andrew & David Farrow
+
+## Important info
+1. Our project report pdf is in the repo and called Project Report.pdf, it is in the root directory
+2. There is a link to the presentation video inside of the project report pdf. 
+3. All important code is inside the Nevro folder
+4. The code will not compile or run on anything outside of a apple licenced operating system and requires the xcode ide to compile. Along with this the folder structure is not actually representative of the project layout. 
+5. This was built for the most recent version of ios/macos
+
+## Credits
+__Carter Andrew__ Developed backend and middle end object designs, and all design patterns featured in project
+
+__David Farrow__ Developed frontend UI views and timer functions
+
+For more information check the git commits
+
+## Other links:
+* __Figma__ https://www.figma.com/file/5LB3z1GnPDOzBL8F1LqRZB/Nevro?type=design&node-id=0%3A1&mode=design&t=eikCYuSjrWHv1Cxl-1
+* __Lucid chart class diagram__ https://lucid.app/lucidchart/5ceea434-a75a-46d2-9ba4-df46079971ec/edit?viewport_loc=388%2C-3248%2C4608%2C2374%2C0_0&invitationId=inv_442ee374-f3bf-4f37-9778-e80b79b2c1d1
