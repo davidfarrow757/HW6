@@ -22,6 +22,7 @@ let floatFormatter: NumberFormatter = {
 
 struct PostView: View {
     @Environment(\.dismiss) var dismiss
+    @Binding var refresh: Bool
     @State var brand:String = ""
     @State var model:String = ""
     @State var year: Int = 0
@@ -147,6 +148,7 @@ struct PostView: View {
                 Button {
                     Task{
                         Vehicle.DIVERSE_MOCK_POSTS.append(VehicleFactory.shared.generateVehicle(brand: brand, model: model, year: year, price: price, start: start, end: end, condition: condition, numSeats: numSeats, mpg: mpg, cartype: cartype, clearance: clearance, hp: hp, sqFt: sqFt))
+                        refresh.toggle()
                         dismiss()
                     }
                 } label: {
@@ -166,6 +168,6 @@ struct PostView: View {
 
 struct PostView_Previews: PreviewProvider {
     static var previews: some View {
-        PostView()
+        PostView(refresh: .constant(true))
     }
 }

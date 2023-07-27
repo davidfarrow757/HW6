@@ -55,6 +55,7 @@ class GreenVehicle: VehicleHandler{
     var id: String {self.vehicle.id}
     var greenAttributes: GreenVehicleAttributes
     init(vehicle: any VehicleHandler, greenAttributes: GreenVehicleAttributes) {
+        print("Testing")
         self.vehicle = vehicle
         self.greenAttributes = greenAttributes
     }

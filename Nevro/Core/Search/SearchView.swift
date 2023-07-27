@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct SearchView: View {
+    @Binding var refresh: Bool
     var body: some View {
         ScrollView{
+            Text("\(refresh)" as String)
             LazyVStack(spacing: 10){
                 ForEach(Vehicle.DIVERSE_MOCK_POSTS, id: \.id){
                     post in
@@ -23,6 +25,6 @@ struct SearchView: View {
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
-        SearchView()
+        SearchView(refresh: .constant(true))
     }
 }

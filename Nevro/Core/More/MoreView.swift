@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MoreView: View {
+    @Binding var refersh: Bool
     var body: some View {
         NavigationStack {
             ZStack {
@@ -41,7 +42,7 @@ struct MoreView: View {
                     }
                     
                     NavigationLink {
-                        PostView()
+                        PostView(refresh: $refersh)
                     } label: {
                         Text("Rent your vehicle")
                             .font(.largeTitle)
@@ -72,6 +73,6 @@ struct MoreView: View {
 
 struct MoreView_Previews: PreviewProvider {
     static var previews: some View {
-        MoreView()
+        MoreView(refersh: .constant(true))
     }
 }

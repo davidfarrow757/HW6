@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View {
+    @State var refresh: Bool = false
     var body: some View {
             TabView {
             HomeView()
@@ -16,7 +17,7 @@ struct MainTabView: View {
                     Text("Home")
                     }   .toolbarBackground(.visible, for: .tabBar)
                         .toolbarBackground(Color("TabColor"), for: .tabBar)
-            SearchView()
+                SearchView(refresh: $refresh)
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     Text("Search")
@@ -39,7 +40,7 @@ struct MainTabView: View {
                 }   .toolbarBackground(.visible, for: .tabBar)
                     .toolbarBackground(Color("TabColor"), for: .tabBar)
             */
-            MoreView()
+            MoreView(refersh: $refresh)
                 .tabItem {
                     Image(systemName: "ellipsis")
                     Text("More")
