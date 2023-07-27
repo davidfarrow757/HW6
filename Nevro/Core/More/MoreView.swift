@@ -40,7 +40,8 @@ struct MoreView: View {
                             .padding(.top,50)
                     }
                     
-                    Button {
+                    NavigationLink {
+                        PostView()
                     } label: {
                         Text("Rent your vehicle")
                             .font(.largeTitle)

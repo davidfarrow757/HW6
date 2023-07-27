@@ -15,16 +15,17 @@ let intFormatter: NumberFormatter = {
 }()
 let floatFormatter: NumberFormatter = {
     let formatter = NumberFormatter()
-    formatter.numberStyle = .currency
+    formatter.numberStyle = .none
     formatter.zeroSymbol = ""
     return formatter
 }()
 
 struct PostView: View {
+    @Environment(\.dismiss) var dismiss
     @State var brand:String = ""
     @State var model:String = ""
     @State var year: Int = 0
-    @State var price: Float = 0
+    @State var price: Float = 0.0
     @State var start: Date = Date()
     @State var end: Date = Date()
     @State var condition: String = ""
@@ -62,7 +63,7 @@ struct PostView: View {
                         .multilineTextAlignment(.center)
                         .disableAutocorrection(true)
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
-                    TextField("Price", value: $price, formatter: floatFormatter, prompt: Text("Price per Month").foregroundColor(.orange))
+                    TextField("Price", value: $price, formatter: floatFormatter, prompt: Text("Price per day").foregroundColor(.orange))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
@@ -90,7 +91,7 @@ struct PostView: View {
                         .multilineTextAlignment(.center)
                         .disableAutocorrection(true)
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.orange, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
-                    TextField("Number of Seats", text: $condition, prompt: Text("Number of seats").foregroundColor(.orange))
+                    TextField("Number of Seats", value: $numSeats, formatter: intFormatter, prompt: Text("Number of seats").foregroundColor(.orange))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
@@ -134,7 +135,7 @@ struct PostView: View {
                         .multilineTextAlignment(.center)
                         .disableAutocorrection(true)
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.blue, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
-                    TextField("Clearance", value: $clearance, formatter: intFormatter, prompt: Text("").foregroundColor(.blue))
+                    TextField("Square feet", value: $sqFt, formatter: intFormatter, prompt: Text("Squae feet").foregroundColor(.blue))
                         .padding(20)
                         .autocapitalization(.none)
                         .font(.largeTitle)
@@ -142,6 +143,20 @@ struct PostView: View {
                         .multilineTextAlignment(.center)
                         .disableAutocorrection(true)
                         .overlay(RoundedRectangle(cornerRadius: 100).stroke(Color.blue, lineWidth: 3).padding(.horizontal, 12).padding(.vertical, 5))
+                }
+                Button {
+                    Task{
+                        Vehicle.DIVERSE_MOCK_POSTS.append(VehicleFactory.shared.generateVehicle(brand: brand, model: model, year: year, price: price, start: start, end: end, condition: condition, numSeats: numSeats, mpg: mpg, cartype: cartype, clearance: clearance, hp: hp, sqFt: sqFt))
+                        dismiss()
+                    }
+                } label: {
+                    Text("Add Listing")
+                        .font(.largeTitle)
+                        .foregroundColor(.black)
+                        .frame(width: 360,height: 70)
+                        .background(.orange)
+                        .cornerRadius(100)
+                    
                 }
             }
         }

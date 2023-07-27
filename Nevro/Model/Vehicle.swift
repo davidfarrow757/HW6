@@ -12,7 +12,7 @@ import FirebaseFirestore
 import SwiftUI
 protocol VehicleHandler: Identifiable{
     var id: String{get}
-    func uploadData() async -> Void
+    func uploadData() async throws -> Void
     func renderCardView() -> AnyView
 }
 struct VehicleAttributes: Hashable, Identifiable, Codable{
@@ -43,24 +43,30 @@ class Vehicle: VehicleHandler{
     func renderCardView() -> AnyView {
         return AnyView(BasicVehicleView(post: self))
     }
-    func uploadData() async -> Void {
-        guard let uid = Auth.auth().currentUser?.uid else {return}
+    func uploadData() async throws-> Void {
+        let postRef = Firestore.firestore().collection("baseAttributes").document()
+        guard let endcodedVehicle = try? Firestore.Encoder().encode(vehicle) else {return}
+        try await postRef.setData(endcodedVehicle)
     }
 }
 
 class GreenVehicle: VehicleHandler{
-    var vehicle: Vehicle
+    var vehicle: any VehicleHandler
     var id: String {self.vehicle.id}
     var greenAttributes: GreenVehicleAttributes
-    init(vehicle: Vehicle, greenAttributes: GreenVehicleAttributes, user: User) {
+    init(vehicle: any VehicleHandler, greenAttributes: GreenVehicleAttributes) {
         self.vehicle = vehicle
         self.greenAttributes = greenAttributes
     }
     func renderCardView() -> AnyView {
         return AnyView(GreenVehicleView(post: self))
     }
-    func uploadData() async -> Void {
-        await vehicle.uploadData()
+    func uploadData() async throws -> Void {
+        let postRef = Firestore.firestore().collection("greenAttributes").document()
+        guard let encodedGreenVehicle = try? Firestore.Encoder().encode(greenAttributes) else {return}
+        
+        try await postRef.setData(encodedGreenVehicle)
+        try await self.vehicle.uploadData()
     }
 }
 
@@ -75,7 +81,7 @@ extension Vehicle{
 }
 extension GreenVehicle{
     static var MOCK_POSTS: [GreenVehicle] = [
-        GreenVehicle(vehicle: Vehicle(vehicle: VehicleAttributes.init(id: NSUUID().uuidString, uid: NSUUID().uuidString, brand: "Kia", model: "Sol", year: 1992, start: Date(), end: Date(), monthPrice: 2000, numSeats: 5, drivechain: "rwd", images: ["car"])), greenAttributes: GreenVehicleAttributes.init(id: NSUUID().uuidString, mpg: 45, vehicleType: "Hybrid"), user: User(id: NSUUID().uuidString, name: "John Visa", email: "john@gmail.com"))
+        GreenVehicle(vehicle: Vehicle(vehicle: VehicleAttributes.init(id: NSUUID().uuidString, uid: NSUUID().uuidString, brand: "Kia", model: "Sol", year: 1992, start: Date(), end: Date(), monthPrice: 2000, numSeats: 5, drivechain: "rwd", images: ["car"])), greenAttributes: GreenVehicleAttributes.init(id: NSUUID().uuidString, mpg: 45, vehicleType: "Hybrid"))
     ]
 }
 

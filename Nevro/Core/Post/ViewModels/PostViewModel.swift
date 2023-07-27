@@ -7,9 +7,28 @@
 
 import Foundation
 import Firebase
-class PostViewModel: ObservableObject{
-    @Published var baseVehicle = Vehicle(vehicle: VehicleAttributes(id: NSUUID().uuidString, uid: Auth.auth().currentUser!.uid, brand: "", model: "", year: 2023, start: Date(), end: Date(), monthPrice: 0, purchased: false, numSeats: 4, drivechain: "", images: []))
-    func uploadPost() async{
-        await self.baseVehicle.uploadData()
+class VehicleFactory{
+    static let shared = VehicleFactory()
+    func generateVehicle(
+    brand:String,
+    model:String,
+    year: Int,
+    price: Float,
+    start: Date,
+    end: Date,
+    condition: String,
+    numSeats: Int,
+    mpg: Int,
+    cartype: String ,
+    clearance: Float,
+    hp: Int,
+    sqFt: Int) -> any VehicleHandler{
+        var basevehicle: any VehicleHandler = Vehicle(vehicle: VehicleAttributes.init(id: NSUUID().uuidString, uid: Auth.auth().currentUser!.uid, brand: brand, model: model, year: year, start: start, end: end, monthPrice: price, numSeats: numSeats, drivechain: condition, images: ["car"]))
+        print("Created base vehicle")
+        if(mpg != 0 && cartype != ""){
+            basevehicle = GreenVehicle(vehicle: basevehicle, greenAttributes: GreenVehicleAttributes.init(id: basevehicle.id, mpg: mpg, vehicleType: cartype))
+            print("Created green vehicle")
+        }
+        return basevehicle
     }
 }
