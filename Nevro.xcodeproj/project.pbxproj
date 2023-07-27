@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		690DF35B2A71FEE500159D6B /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 690DF35A2A71FEE500159D6B /* EditAccountView.swift */; };
 		692233E82A6642F300A15B05 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233E72A6642F300A15B05 /* LoginView.swift */; };
 		692233EA2A66445800A15B05 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233E92A66445800A15B05 /* SignupView.swift */; };
 		692233ED2A677F1100A15B05 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692233EC2A677F1100A15B05 /* AccountView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		690DF35A2A71FEE500159D6B /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
 		692233E72A6642F300A15B05 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		692233E92A66445800A15B05 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		692233EC2A677F1100A15B05 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -109,14 +111,6 @@
 			path = BecomeHost;
 			sourceTree = "<group>";
 		};
-		692233EF2A67824B00A15B05 /* ContactSupport */ = {
-			isa = PBXGroup;
-			children = (
-				692233F22A6782BB00A15B05 /* ContactSupportView.swift */,
-			);
-			path = ContactSupport;
-			sourceTree = "<group>";
-		};
 		69407C142A70ABC100FCA739 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +126,6 @@
 			children = (
 				AD85A8D52A7180BE0035691D /* Post */,
 				69407C142A70ABC100FCA739 /* Home */,
-				692233EF2A67824B00A15B05 /* ContactSupport */,
 				692233EE2A67823B00A15B05 /* BecomeHost */,
 				692233EB2A677EEE00A15B05 /* Account */,
 				69791BFD2A66231C00B81B38 /* Search */,
@@ -218,6 +211,8 @@
 			isa = PBXGroup;
 			children = (
 				69ABB2662A65F49D0067548A /* MoreView.swift */,
+				690DF35A2A71FEE500159D6B /* EditAccountView.swift */,
+				692233F22A6782BB00A15B05 /* ContactSupportView.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -453,6 +448,7 @@
 				AD3B02172A6C263C0009A710 /* User.swift in Sources */,
 				69237D3B2A71847200C02101 /* VehicleCardView.swift in Sources */,
 				692233EA2A66445800A15B05 /* SignupView.swift in Sources */,
+				690DF35B2A71FEE500159D6B /* EditAccountView.swift in Sources */,
 				69ABB24D2A65EF010067548A /* NevroApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
