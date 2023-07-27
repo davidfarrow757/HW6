@@ -30,27 +30,7 @@ struct EditAccountView: View {
                 
             /* FireBase Guide
             https://firebase.google.com/docs/auth/ios/manage-users#set_a_users_password
-            
-             let user = Auth.auth().currentUser
-             var credential: AuthCredential
-
-             // Prompt the user to re-provide their sign-in credentials
-             
-             
-             //Step 1. Re-authenticae
-             user?.reauthenticate(with: credential) { error in
-               if let error = error {
-                 // An error happened. Generate Alert
-               } else {
-                 // User re-authenticated.
-                // Step 2. Prompt the user to for new password and password confirmation
-                //Step 3. Check for match of new password and confimation
-                //Step 4. Click Submit and update password method
-                    Auth.auth().currentUser?.updatePassword(to: password) { error in
-                    // ...
-                    }
-               }
-             }
+           Steps:  Re-authentiate, confirm password, updatePassword()
            */
                 
                 //Current Password

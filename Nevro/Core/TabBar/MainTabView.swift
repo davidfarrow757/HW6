@@ -29,6 +29,8 @@ struct MainTabView: View {
                     Text("Trips")
                 }   .toolbarBackground(.visible, for: .tabBar)
                     .toolbarBackground(Color("TabColor"), for: .tabBar)
+                
+           //Inbox feature will be added at a later time...
            /*
             InboxView()
                 .tabItem {

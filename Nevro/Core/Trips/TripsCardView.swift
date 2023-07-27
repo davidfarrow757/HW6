@@ -21,23 +21,28 @@ struct TripsCardView: View {
                 VStack(spacing: 5) {
                     HStack {
                         Text("Chevrolet Camaro")
+                            .foregroundColor(.black)
                             .font(.callout)
                             .lineLimit(1)
                         Spacer()
                         Text("Booked")
+                            .foregroundColor(.black)
                             .bold()
                             .font(.caption)
                             .lineLimit(1)
                     }
                     HStack {
                         Text("2020")
+                            .foregroundColor(.black)
                             .font(.callout)
                             .lineLimit(1)
                         Spacer()
                         Text("date" + " - ")
+                            .foregroundColor(.black)
                             .font(.caption)
                             .lineLimit(1)
                         Text("date")
+                            .foregroundColor(.black)
                             .font(.caption)
                             .lineLimit(1)
                     }

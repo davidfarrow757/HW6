@@ -21,6 +21,7 @@ struct VehicleCardView: View {
                         .cornerRadius(12)
                     
                     Text("Ford Mustang ")
+                        .foregroundColor(.black)
                         .font(.headline)
                         .padding(.vertical,1)
                     
@@ -30,6 +31,7 @@ struct VehicleCardView: View {
                         .padding(.vertical, 1)
                     
                     Text("$200 per day")
+                        .foregroundColor(.black)
                         .bold()
                 }
                 Button{
