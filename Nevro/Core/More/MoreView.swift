@@ -47,15 +47,9 @@ struct MoreView: View {
                         .background(.orange)
                         .cornerRadius(100)
                 }
-                Button {
-                } label: {
-                    Text("Contact Support")
-                        .font(.largeTitle)
-                        .foregroundColor(.black)
-                        .frame(width: 360,height: 70)
-                        .background(.orange)
-                        .cornerRadius(100)
-                }
+                
+                ContactSupportView()
+                
                 Button {
                     AuthService.shared.signOut()
                 } label: {
